@@ -1,0 +1,11 @@
+Bin {
+  Term = Boolean
+       | Number
+       | Operator
+       | Conditional
+
+  Conditional = "if" Term "then" Term "else" Term
+  Boolean = "true" | "false"
+  Operator = ("succ" | "pred" | "iszero") Term
+  Number = digit+
+}
